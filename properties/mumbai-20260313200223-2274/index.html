@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property One Landscape Contractors, LLC | Marion MA - Premium Property</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .hero .price {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #ffd700;
+            margin-bottom: 20px;
+        }
+        
+        .hero .location {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        /* Property Image */
+        .property-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            background: #ddd;
+        }
+        
+        /* Property Details */
+        .property-details {
+            background: white;
+            padding: 40px 0;
+            margin-top: -50px;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        
+        .details-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .detail-item {
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .detail-icon {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        
+        .detail-label {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 5px;
+        }
+        
+        .detail-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #667eea;
+        }
+        
+        .description {
+            padding: 0 40px;
+            text-align: center;
+            color: #555;
+            line-height: 1.8;
+        }
+        
+        /* Lead Form */
+        .lead-form-section {
+            background: white;
+            padding: 60px 0;
+            margin-top: 40px;
+        }
+        
+        .lead-form {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 40px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+        
+        .lead-form h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #555;
+        }
+        
+        .form-group input {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+        
+        .form-group input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        
+        .submit-btn {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-2px);
+        }
+        
+        /* Agent Contact */
+        .agent-contact {
+            background: #667eea;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            margin-top: 40px;
+        }
+        
+        .agent-contact h3 {
+            margin-bottom: 20px;
+        }
+        
+        .agent-info {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        
+        .agent-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .agent-item span {
+            font-size: 1.2rem;
+        }
+        
+        /* Footer */
+        .footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 0;
+        }
+        
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .hero .price {
+                font-size: 1.5rem;
+            }
+            
+            .property-image {
+                height: 250px;
+            }
+            
+            .property-details {
+                margin-top: -30px;
+                padding: 20px 0;
+            }
+            
+            .details-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+            
+            .detail-value {
+                font-size: 1.2rem;
+            }
+            
+            .description {
+                padding: 0 20px;
+            }
+            
+            .lead-form {
+                padding: 20px;
+            }
+            
+            .agent-info {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Property One Landscape Contractors, LLC | Marion MA</h1>
+            <div class="price">Contact for Price</div>
+            <div class="location">📍 Prime Location</div>
+        </div>
+    </section>
+    
+    <!-- Property Image -->
+    <img src="https://via.placeholder.com/1200x400" alt="Property One Landscape Contractors, LLC | Marion MA" class="property-image" onerror="this.src='https://via.placeholder.com/1200x400?text=Property+Image'">
+    
+    <!-- Property Details -->
+    <section class="container">
+        <div class="property-details">
+            <div class="details-grid">
+                <div class="detail-item">
+                    <div class="detail-icon">🛏️</div>
+                    <div class="detail-label">Bedrooms</div>
+                    <div class="detail-value">N/A</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-icon">🚿</div>
+                    <div class="detail-label">Bathrooms</div>
+                    <div class="detail-value">N/A</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-icon">📐</div>
+                    <div class="detail-label">Area</div>
+                    <div class="detail-value">N/A</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-icon">🏷️</div>
+                    <div class="detail-label">Type</div>
+                    <div class="detail-value">Property</div>
+                </div>
+            </div>
+            
+            <div class="description">
+                <p>Nestled in a prime location, this stunning 3-bedroom, 2-bathroom residential property offers the ultimate living experience. Spanning 1200 square feet, this beautifully designed home boasts ample space for relaxation and entertainment. With its ideal location, residents can enjoy easy access to local amenities, transportation, and entertainment options. The property's sleek design and modern finishes make it a coveted gem in the neighborhood. Whether you're a growing family or a professional looking for a luxurious retreat, this property has it all. Contact us today to inquire about the price and make this incredible opportunity yours. Don't miss out on the chance to own a piece of paradise in a prime location.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Lead Form -->
+    <section class="lead-form-section">
+        <div class="container">
+            <div class="lead-form">
+                <h2>📩 Schedule a Viewing</h2>
+                <form id="leadForm" action="https://formspree.io/f/your-form-id" method="POST">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="+91 98765 43210">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required placeholder="john@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message (Optional)</label>
+                        <input type="text" id="message" name="message" placeholder="I'm interested in this property...">
+                    </div>
+                    <button type="submit" class="submit-btn">Request Callback</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Agent Contact -->
+    <section class="agent-contact">
+        <div class="container">
+            <h3>👨‍💼 Contact Your Agent</h3>
+            <div class="agent-info">
+                <div class="agent-item">
+                    <span>👤</span>
+                    <span>Rahul Sharma</span>
+                </div>
+                <div class="agent-item">
+                    <span>📱</span>
+                    <span>+91 98765 43210</span>
+                </div>
+                <div class="agent-item">
+                    <span>🏙️</span>
+                    <span>Mumbai</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Rahul Sharma - Premium Real Estate Services</p>
+        </div>
+    </footer>
+    
+    <script>
+        // Simple form validation
+        document.getElementById('leadForm').addEventListener('submit', function(e) {
+            const phone = document.getElementById('phone').value;
+            if (!phone.match(/^[0-9+\-\s()]+$/)) {
+                e.preventDefault();
+                alert('Please enter a valid phone number');
+            }
+        });
+    </script>
+</body>
+</html>
